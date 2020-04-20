@@ -3,35 +3,33 @@ A small project for measuring wind speed using rotating Anemometer.
 
 # Contents
 
-**[Group Members 2](#_Toc391770470)**
+**[Introduction](#1)**
 
-**[Introduction: 4](#_Toc391770471)**
+**[Background studies](#2)**
 
-**[Background studies 4](#_Toc391770472)**
+**[Working procedure](#3)**
 
-**[Working procedure 5](#_Toc391770473)**
+**[Mechanical design](#4)**
 
-**[Mechanical design 6](#_Toc391770474)**
+**[Specification](#5)**
 
-**[Specification: 7](#_Toc391770475)**
+**[Working mechanism (Flow of work) ](#6)**
 
-**[Working mechanism (Flow of work) 7](#_Toc391770476)**
+**[Schematic (electrical portion only): ](#7)**
 
-**[Schematic (electrical portion only): 8](#_Toc391770477)**
+**[Usability](#8)**
 
-**[Usability: 9](#_Toc391770478)**
+**[Limitations](#9)**
 
-**[Limitations 9](#_Toc391770479)**
+**[Further Possible Upgrades](#10)**
 
-**[Further Possible Upgrades 9](#_Toc391770480)**
+**[Important learning from this project](#11)**
 
-**[Important learning from this project 9](#_Toc391770481)**
+**[Algorithm of code](#12)**
 
-**[Algorithm of code 10](#_Toc391770482)**
+**[Software and materials used](#13)**
 
-**[Software and materials used 10](#_Toc391770483)**
-
-# Introduction:
+# Introduction
 
 Wind speed is one of the prime measures for meteorological data. An anemometer can measure the speed of wind.
 
@@ -73,28 +71,28 @@ We choose to use cup anemometer for a couple of reason,
 
 In our design we used a computer cooling fan as base of our mechanical rotator. With this base we glued a small pipe to elevate it slightly where we attached three of our cup to distant using small pieces of sticks. Our mechanical design made was around 11 inches in diameter. The picture below shows the mechanical prototype we used.
 
-![](RackMultipart20200420-4-1tuppmk_html_366ec5a84d38a8d6.jpg)
+![](mechanical_design.jpg)
 
 We used 3 cups over 4 cups because we found out in experiment that 4 cups provided a less response than the 3 cup design
 
-# Specification:
+# Specification
 
-Measuring range : 0 – 10 km/h
- Dimension : 27 cm diameter at top for the mechanical part
- Weight : 100 gm approximately
- Power : 3.3V – 5V (5V preferable)
- operating at : 16 MHz
- Optional : Possibility to show speed in m/s
+* Measuring range : 0 – 10 km/h
+* Dimension : 27 cm diameter at top for the mechanical part
+* Weight : 100 gm approximately
+* Power : 3.3V – 5V (5V preferable)
+* operating at : 16 MHz
+* Optional : Possibility to show speed in m/s
 
 # Working mechanism (Flow of work)
 
-![](RackMultipart20200420-4-1tuppmk_html_e845fb60aafa3824.jpg)
+![](Block.jpg)
 
-# Schematic (electrical portion only):
+# Schematic (electrical portion only)
 
-![](RackMultipart20200420-4-1tuppmk_html_fb3fe7d5f16e14f6.png)
+![](Schematic.BMP)
 
-# Usability:
+# Usability
 
 This anemometer can be used to measure low to moderate winds in home and some commercial purpose. As it is low cost (around 500 taka) many of this can be used together to take data&#39;s around large areas without ease.
 
@@ -118,7 +116,7 @@ Possible improvements can be pointed as
 - Measuring rotation of cars, cycle or other rotating objects
 - Interrupt driven timers
 
-**Important learning f** r **om this project**
+**Important learning from this project**
 
 There is much important learning from this project. These can be pointed as:-
 
@@ -132,7 +130,7 @@ There is much important learning from this project. These can be pointed as:-
 **Important :** This is just a sample algorithm intended for understanding the mechanism. Actual algorithm used is slightly different from it.
 
 A code has been written in AVR STUDIO to program the microcontroller. The algorithm of the code is as follows
-
+```
 _do always_
 
 _for 4 s_
@@ -150,20 +148,20 @@ _wind speed = count\*3.14\*.27\*.25\*3.6_
 _display LCD_
 
 _count=0_
-
+```
 # Software and materials used
 
 **Software**
 
-Proteus : For Real-time simulation
- AVR Studio : For Programming
- Arduino : Program downloading
+* Proteus : For Real-time simulation
+* AVR Studio : For Programming
+* Arduino : Program downloading
 
 **Hardware**
 
-Microcontroller : ATMEGA328
- Oscillator : 16 Mhz
- Programmer : usbasp / Arduino
- Display : LCD (16 X 2 alphanumeric)
- Potentiometers : 103
- Hall Effect sensor : 6851
+* Microcontroller : ATMEGA328
+* Oscillator : 16 Mhz
+* Programmer : usbasp / Arduino
+* Display : LCD (16 X 2 alphanumeric)
+* Potentiometers : 103
+* Hall Effect sensor : 6851
