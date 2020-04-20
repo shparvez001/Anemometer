@@ -3,31 +3,31 @@ A small project for measuring wind speed using rotating Anemometer.
 
 # Contents
 
-**[Introduction](#1)**
+**[Introduction](#introduction)**
 
-**[Background studies](#2)**
+**[Background studies](#background-studies)**
 
-**[Working procedure](#3)**
+**[Working procedure](#working-procedure)**
 
-**[Mechanical design](#4)**
+**[Mechanical design](#mechanical-design)**
 
-**[Specification](#5)**
+**[Specification](#specification)**
 
-**[Working mechanism (Flow of work) ](#6)**
+**[Working mechanism (Flow of work) ](#working-mechanism-flow-of-work)**
 
-**[Schematic (electrical portion only): ](#7)**
+**[Schematic (electrical portion only): ](#schematic-electrical-portion-only)**
 
-**[Usability](#8)**
+**[Usability](#usability)**
 
-**[Limitations](#9)**
+**[Limitations](#limitations)**
 
-**[Further Possible Upgrades](#10)**
+**[Further Possible Upgrades](#further-possible-upgrades)**
 
-**[Important learning from this project](#11)**
+**[Important learning from this project](#important-learning-from-this-project)**
 
-**[Algorithm of code](#12)**
+**[Algorithm of code](#algorithm-of-code)**
 
-**[Software and materials used](#13)**
+**[Software and materials used](#software-and-materials-used)**
 
 # Introduction
 
@@ -116,7 +116,7 @@ Possible improvements can be pointed as
 - Measuring rotation of cars, cycle or other rotating objects
 - Interrupt driven timers
 
-**Important learning from this project**
+# Important learning from this project
 
 There is much important learning from this project. These can be pointed as:-
 
